@@ -15,7 +15,7 @@ defmodule MixMusic.NotePlayer do
   def play(%Note{duration: duration, volume: volume} = note) do
     frequency = Note.to_frequency(note)
 
-    Logger.info("Playing Note: #{note.class} #{note.modifier} #{note.octet}")
+    Logger.info("Played Note: #{note.class} #{note.modifier} #{note.octet}")
 
     ## Got this command from the internet
     cmd("""
