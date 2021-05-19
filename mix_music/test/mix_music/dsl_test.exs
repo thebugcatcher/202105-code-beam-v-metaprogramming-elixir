@@ -44,6 +44,8 @@
 #   end
 #
 #   describe "__before_compile__/1" do
+#     require DSL
+#
 #     test "defines a function `__sequences__` which delegates to `@sequences`" do
 #       expected =
 #         quote do
